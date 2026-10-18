@@ -1,8 +1,6 @@
 # Prerequisites
 *.d
 
-*.json
-
 # Compiled Object files
 *.slo
 *.lo
@@ -25,7 +23,6 @@
 *.dll
 *.so.*
 
-
 # Fortran module files
 *.mod
 *.smod
@@ -45,6 +42,8 @@
 build/
 Build/
 build-*/
+bin/
+out/
 
 # CMake generated files
 CMakeFiles/
@@ -54,11 +53,35 @@ Makefile
 install_manifest.txt
 compile_commands.json
 
+# Visual Studio / MSVC files
+.vs/
+Debug/
+Release/
+x64/
+x86/
+*.sln
+*.vcxproj*
+*.user
+
+# VS Code settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
 # Temporary files
 *.tmp
 *.log
 *.bak
 *.swp
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
 
 # vcpkg
 vcpkg_installed/
