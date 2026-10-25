@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <clocale>
 using namespace std;
 
 int main() {
@@ -17,6 +17,6 @@ int main() {
     }
 
     cout << "Сумма ряда с точностью eps = " << eps << " равна: " << sum << endl;
-
+    
     return 0;
 }
