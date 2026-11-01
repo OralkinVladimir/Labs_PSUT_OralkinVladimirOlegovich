@@ -7,4 +7,4 @@
 |:---|:---:|:---:|:---:|
 |0|HelloWorld|24.09.26|Done|
 
-![Вентилятор](https://avatars.mds.yandex.net/i?id=5f6012796b911607c43134bbf1fe3be1_l-9858868-images-thumbs&n=13)
+![Вентилятор](https://i.pinimg.com/736x/12/48/96/12489634f1d391b8030f1b20c7b3d768.jpg)
