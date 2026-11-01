@@ -8,6 +8,10 @@
                 "/Zi",
                 "/EHsc",
                 "/nologo",
+                "/utf-8",
+                "/source-charset:utf-8",
+                "/W4",
+                "/std:c++17",
                 "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
                 "${file}"
             ],

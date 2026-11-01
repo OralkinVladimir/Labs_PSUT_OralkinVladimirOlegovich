@@ -1,14 +1,14 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
-#include <windows.h>
+#include <clocale>
 using namespace std;
 
 int main()
 {
-    setlocale(LC_ALL, "Russian");
+    setlocale(LC_ALL, ".UTF8");
 
-    // ==================== ТИП FLOAT ====================
+    // ==================== пїЅпїЅпїЅ FLOAT ====================
     float a_f = 100.0f;
     float b_f = 0.001f;
 
@@ -20,21 +20,21 @@ int main()
     float result_f      = numerator_f / denominator_f;
 
     cout << "========================================" << endl;
-    cout << "Задание 1. Тип float:" << endl;
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1. пїЅпїЅпїЅ float:" << endl;
     cout << "========================================" << endl;
     cout << "a = " << a_f << ", b = " << b_f << endl;
 
     cout << scientific << setprecision(15);
     cout << "term1       = " << term1_f << endl;
     cout << "term2       = " << term2_f << endl;
-    cout << "Числитель   = " << numerator_f << endl;
-    cout << "Знаменатель = " << denominator_f << endl;
-    cout << "РЕЗУЛЬТАТ   = " << result_f << endl;
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ   = " << numerator_f << endl;
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ = " << denominator_f << endl;
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ   = " << result_f << endl;
 
     cout << fixed << setprecision(6);
-    cout << "РЕЗУЛЬТАТ (fixed) = " << result_f << endl << endl;
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (fixed) = " << result_f << endl << endl;
 
-    // ==================== ТИП DOUBLE ====================
+    // ==================== пїЅпїЅпїЅ DOUBLE ====================
     double a_d = 100.0;
     double b_d = 0.001;
 
@@ -45,27 +45,27 @@ int main()
     double denominator_d = 4 * a_d * pow(b_d, 3) + pow(b_d, 4);
     double result_d      = numerator_d / denominator_d;
 
-    // Точное значение знаменателя 4ab^3 + b^4
+    // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 4ab^3 + b^4
     double exact = 4 * a_d * b_d * b_d * b_d + b_d * b_d * b_d * b_d;
 
     cout << "========================================" << endl;
-    cout << "Задание 1. Тип double:" << endl;
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1. пїЅпїЅпїЅ double:" << endl;
     cout << "========================================" << endl;
     cout << "a = " << a_d << ", b = " << b_d << endl;
 
     cout << scientific << setprecision(17);
     cout << "term1       = " << term1_d << endl;
     cout << "term2       = " << term2_d << endl;
-    cout << "Числитель   = " << numerator_d << endl;
-    cout << "Знаменатель = " << denominator_d << endl;
-    cout << "Точное зн.  = " << exact << endl;
-    cout << "|Числ ? Точн| = " << fabs(numerator_d - exact) << endl;
-    cout << "РЕЗУЛЬТАТ   = " << result_d << endl;
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ   = " << numerator_d << endl;
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ = " << denominator_d << endl;
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ.  = " << exact << endl;
+    cout << "|пїЅпїЅпїЅпїЅ ? пїЅпїЅпїЅпїЅ| = " << fabs(numerator_d - exact) << endl;
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ   = " << result_d << endl;
 
     cout << fixed << setprecision(6);
-    cout << "Числитель (fixed)   = " << numerator_d << endl;
-    cout << "Знаменатель (fixed) = " << denominator_d << endl;
-    cout << "РЕЗУЛЬТАТ (fixed)   = " << result_d << endl << endl;
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (fixed)   = " << numerator_d << endl;
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (fixed) = " << denominator_d << endl;
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (fixed)   = " << result_d << endl << endl;
 
     return 0;
 }
