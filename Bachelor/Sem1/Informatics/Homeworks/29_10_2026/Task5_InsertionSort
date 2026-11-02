@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int n = 7;
+    int a[n] = {45, 12, 89, 3, 56, 23, 78};
+
+    for (int i = 1; i < n; i++) {
+        int key = a[i]; // Запоминаем текущий элемент
+        int j = i - 1;
+        
+        // Сдвигаем элементы, которые больше key, вправо
+        while (j >= 0 && a[j] > key) {
+            a[j + 1] = a[j];
+            j--;
+        }
+        a[j + 1] = key; // Вставляем key на нужное место
+    }
+
+    cout << "Отсортированный массив (вставка): ";
+    for (int i = 0; i < n; i++) cout << a[i] << " ";
+    cout << endl;
+    return 0;
+}
