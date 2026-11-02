@@ -1,13 +1,13 @@
 #include <iostream>
-#include <iomanip>
 #include <cmath>
 #include <clocale>
+#include <iomanip>
+
 using namespace std;
 
 int main()
 {
     setlocale(LC_ALL, ".UTF8");
-
     // ==================== ��� FLOAT ====================
     float a_f = 100.0f;
     float b_f = 0.001f;
