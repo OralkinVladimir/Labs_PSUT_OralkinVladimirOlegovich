@@ -70,4 +70,4 @@ int main()
 
     cout << "\nРезультат:\n" << result << endl;
     return 0;
-} 
+}   // 1a 2b 3c 10d.
